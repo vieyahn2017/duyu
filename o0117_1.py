@@ -43,3 +43,8 @@ template = template_file.read()
 
 trans_template = sub_variables(template, filled_variables)
 print trans_template
+
+
+f = open(the_date + "0001.txt", 'w')
+f.write(trans_template)
+f.close()
