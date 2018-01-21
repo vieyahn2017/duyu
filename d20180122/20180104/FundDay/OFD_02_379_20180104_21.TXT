@@ -1,0 +1,18 @@
+OFDCFDAT
+20  
+02       
+379      
+20180104
+999
+21
+02      
+379     
+005
+SEATCODE
+DISTRIBUTORCODE
+DISTRIBUTORNAME
+TRANSFERPERMITFLAG
+DOWNLOADDATE
+00000001
+      379      ºÍ¸û´«³Ð                                                                        120180104
+OFDCFEND
