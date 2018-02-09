@@ -9,7 +9,7 @@ import os
 import sys
 
 
-def get_remote_sftp_client(hostname, port, username, password)
+def get_remote_sftp_client(hostname, port, username, password:
     #服务器信息，主机名（IP地址）、端口号、用户名及密码
     client = paramiko.SSHClient()
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
