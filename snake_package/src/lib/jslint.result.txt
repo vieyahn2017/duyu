@@ -1,0 +1,42 @@
+D:\mygithub\snake_package\src\lib\stats.module.js
+    5:1   error    Unexpected var, use let or const instead                         no-var
+    5:13  warning  Missing function expression name                                 func-names
+    5:21  error    Unexpected space before function parentheses                     space-before-function-paren
+    7:5   error    Unexpected var, use let or const instead                         no-var
+    9:5   error    Unexpected var, use let or const instead                         no-var
+   11:42  warning  Missing function expression name                                 func-names
+   11:50  error    Unexpected space before function parentheses                     space-before-function-paren
+   14:9   error    "showPanel" was used before it was defined                       no-use-before-define
+   29:15  error    All "var" declarations must be at the top of the function scope  vars-on-top
+   29:15  error    Unexpected var, use let or const instead                         no-var
+   41:5   error    All "var" declarations must be at the top of the function scope  vars-on-top
+   41:5   error    Unexpected var, use let or const instead                         no-var
+   43:5   error    All "var" declarations must be at the top of the function scope  vars-on-top
+   43:5   error    Unexpected var, use let or const instead                         no-var
+   44:5   error    All "var" declarations must be at the top of the function scope  vars-on-top
+   44:5   error    Unexpected var, use let or const instead                         no-var
+   48:9   error    All "var" declarations must be at the top of the function scope  vars-on-top
+   48:9   error    Unexpected var, use let or const instead                         no-var
+   63:16  warning  Missing function expression name                                 func-names
+   63:24  error    Unexpected space before function parentheses                     space-before-function-paren
+   69:14  warning  Missing function expression name                                 func-names
+   69:22  error    Unexpected space before function parentheses                     space-before-function-paren
+   73:13  error    All "var" declarations must be at the top of the function scope  vars-on-top
+   73:13  error    Unexpected var, use let or const instead                         no-var
+   84:22  error    "memPanel" used outside of binding context                       block-scoped-var
+   86:21  error    All "var" declarations must be at the top of the function scope  vars-on-top
+   86:21  error    Unexpected var, use let or const instead                         no-var
+   87:21  error    "memPanel" used outside of binding context                       block-scoped-var
+   97:17  warning  Missing function expression name                                 func-names
+   97:25  error    Unexpected space before function parentheses                     space-before-function-paren
+  112:15  warning  Missing function expression name                                 func-names
+  112:23  error    Unexpected space before function parentheses                     space-before-function-paren
+  114:5   error    Unexpected var, use let or const instead                         no-var
+  115:5   error    Unexpected var, use let or const instead                         no-var
+  117:5   error    Unexpected var, use let or const instead                         no-var
+  122:5   error    Unexpected var, use let or const instead                         no-var
+  127:5   error    All "var" declarations must be at the top of the function scope  vars-on-top
+  127:5   error    Unexpected var, use let or const instead                         no-var
+  146:17  warning  Missing function expression name                                 func-names
+  146:25  error    Unexpected space before function parentheses                     space-before-function-paren
+  171:2   error    Newline required at end of file but not found                    eol-last
