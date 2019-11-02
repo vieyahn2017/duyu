@@ -1,6 +1,3 @@
-/**
- * Created at 2017/3/6.
- */
 import socketioJwt from 'socketio-jwt';
 import config from '../config';
 import stage from './stage';
@@ -13,18 +10,12 @@ const dieCheck = (snakes) => {
     for (const key in snakes) {
         const snake = snakes[key];
 
-
-
-
-
+        if (snake.is_offline == true) {
+            continue;
+        }
 
         for (const _key in snakes) {
             const _snake = snakes[_key];
-
-
-
-
-
 
 
             if (key !== _key) {
@@ -65,6 +56,10 @@ const crashCheck = (snakes) => {
     for (const key in snakes) {
         const snake = snakes[key];
 
+        if (snake.is_offline == true) {
+            continue;
+        }
+        
         stage.points.forEach((food, index) => {
             if (
                 food &&
@@ -198,6 +193,17 @@ export default function ioConnect(io, runnable) {
 
                 snakes[socket.user._id].resetColor();
             });
+
+            socket.on('offline', () => {
+                if (!socket.user) return;
+                snakes[socket.user._id].offline();
+            });
+
+            socket.on('online', () => {
+                if (!socket.user) return;
+                snakes[socket.user._id].online();
+            });
+
         });
 
     io.listen(runnable);

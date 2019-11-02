@@ -17,6 +17,15 @@ export default class Msg extends Component {
         super(...arg);
     }
 
+
+    onlineSnake = () => {
+        this.props.socket.emit('online');
+    };
+
+    offlineSnake = () => {
+        this.props.socket.emit('offline');
+    };
+
     resetSnake = () => {
         this.props.socket.emit('reset');
     };
@@ -32,6 +41,8 @@ export default class Msg extends Component {
                 top: '10px'
             }}>
                 <Button onClick={this.resetSnake}>换肤</Button>
+                <Button onClick={this.offlineSnake}>存档下线</Button>
+                <Button onClick={this.onlineSnake}>删档上线</Button>
             </div>
         );
     }

@@ -2,8 +2,8 @@ let id = 0;
 let messageId = 0;
 
 export default {
-    width: 1920,
-    height: 900,
+    width: 1600,
+    height: 720,
     points: [],
     message: [],
     addPoints() {

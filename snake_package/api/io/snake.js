@@ -1,6 +1,10 @@
 import stage from './stage';
 import Body from './body';
 
+// import mongoose from 'mongoose';
+// const SnakeModel = mongoose.model('Snake');
+
+
 let id = 0;
 
 function getRandomColor() {
@@ -53,6 +57,7 @@ export default function Snake(config = {}) {
     this.lv = 1;
     this.speed = 10;
     this.weight = 0;
+    this.is_offline = false;
 
     this.init();
 }
@@ -60,6 +65,21 @@ export default function Snake(config = {}) {
 Snake.prototype.resetColor = function() {
     this.color = '#' + getRandomColor();
     this.rgb = getRGB(this.color);
+};
+
+Snake.prototype.offline = function () {
+    this.is_offline = true;
+    // SnakeModel.create(this,(err)=>{
+    //     if(!err){
+    //         console.log("插入成功");
+    //     }else{
+    //         throw err;
+    //     }
+    // })
+};
+
+Snake.prototype.online = function () {
+    this.is_offline = false;
 };
 
 Snake.prototype.init = function () {
